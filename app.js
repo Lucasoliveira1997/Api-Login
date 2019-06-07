@@ -4,7 +4,9 @@ const port = 3035
 
 //BANCO DE DADOS
 const mongoose = require('mongoose')
-const url = `mongodb+srv://usuario_admin:lukinhas039@clusterapi-bamcd.mongodb.net/test?retryWrites=true`
+
+
+const url = `mongodb+srv://usuario_admin:lukinhas039@clusterapi-bamcd.mongodb.net/test?retryWrites=true&w=majority`
 const options = {reconnectTries: Number.MAX_VALUE, reconnectInterval: 500, poolSize: 5, useNewUrlParser: true}
 
 mongoose.connect(url, options)
